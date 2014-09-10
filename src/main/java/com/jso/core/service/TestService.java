@@ -15,7 +15,9 @@ public class TestService {
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("/hello")
 	public Response hello() {
+		final TestResponse response = new TestResponse();
+		response.setMessage("Hello world");
 
-		return Response.status(OK).entity("hello world").build();
+		return Response.status(OK).entity(response).build();
 	}
 }
