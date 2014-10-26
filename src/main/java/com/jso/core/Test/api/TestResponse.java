@@ -1,4 +1,4 @@
-package com.jso.core.service;
+package com.jso.core.Test.api;
 
 public class TestResponse {
 	private String message;
